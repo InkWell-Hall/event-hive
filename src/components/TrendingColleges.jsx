@@ -3,7 +3,7 @@ import CollegeCard from "./CollegeCard";
 export default function TrendingColleges() {
   return (
     <section className="mt-20 w-[90%] mx-auto">
-      <h1 className="text-[36px] mb-4 font-extrabold ">
+      <h1 className="text-[36px] mb-4 font-bold ">
         <span>Trending </span>
         <span className="text-[#7848F4] ml-1">colleges</span>
       </h1>

@@ -4,7 +4,7 @@ export default function UpcomingEvents() {
   return (
     <section className="mt-20 w-[90%] mx-auto">
       <div>
-        <h1 className="text-[36px] mb-4 font-extrabold ">
+        <h1 className="text-[36px] mb-4 font-bold">
           <span>Upcoming</span>
           <span className="text-[#7848F4] ml-2">Events</span>
         </h1>
