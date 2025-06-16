@@ -9,7 +9,7 @@ export default function EventCard() {
           "https://plus.unsplash.com/premium_photo-1661306437817-8ab34be91e0c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXZlbnRzfGVufDB8fDB8fHww"
         }
         alt="Event Card"
-        className="h-60 w-88"
+        className="h-60 w-88 rounded-[5px]"
       />
       <h1 className="text-body-text font-bold sans mt-3 mb-3 ">
         BestSelller Book Bootcamp -write, Market & Publish Your Book -Lucknow
