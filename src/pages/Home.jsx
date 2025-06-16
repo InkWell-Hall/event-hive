@@ -55,7 +55,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[80%] mx-auto">
-            <div className="flex gap-7 items-center">
+            <div className="flex gap-7 items-center justify-center">
               <img src={spotify} alt="" className="w-45 h-13" />
               <img src={google} alt="" className="w-41 h-13" />
               <img src={stripe} alt="" className="w-36 h-16" />
@@ -63,7 +63,7 @@ export default function Home() {
               <img src={micro} alt="" className="w-74 h-31" />
             </div>
 
-            <div className="flex gap-7 items-center w-[90%] mx-auto">
+            <div className="flex gap-7 justify-center items-center w-[90%] mx-auto">
               <img src={medium} alt="" className="w-74 h-21" />
               <img src={zoom} alt="" className="w-46 h-9.5" />
               <img src={uber} alt="" className="w-34 h-11" />
