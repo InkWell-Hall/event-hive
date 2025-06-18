@@ -1,15 +1,14 @@
+import { imageBaseUrl } from "../api/client";
 import button from "../assets/images/Button.png";
 import star from "../assets/images/star.png";
 
-export default function CollegeCard() {
+export default function CollegeCard({college}) {
   return (
     <div className=" w-98 h-124 bg-white rounded-[10px] relative">
       <div>
         <img
-          src={
-            "https://images.unsplash.com/photo-1603437119287-4a3732b685f9?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt="College Card"
+          src={`${imageBaseUrl}/${college.image}`}
+          alt={college.name}
           className="rounded-[10px] w-97 h-83"
         />
         <div className="flex justify-between items-center absolute w-full bottom-43 p-2 ">
@@ -23,11 +22,11 @@ export default function CollegeCard() {
         </div>
       </div>
       <div className="py-9 px-7 flex flex-col gap-5">
-        <h1 className="text-heading font-bold">Harvard University</h1>
+        <h1 className="text-heading font-bold">{college.name}</h1>
 
         <div className="flex justify-between items-center">
           <h2 className="text-[14px] font-medium">
-            Cambridge, Massachusetts, UK
+            {college.location}
           </h2>
           {/* <span className="bg-[#F2F2F2] w-12.5 h-9 flex justify-center items-center rounded-[50px] p-10:">
             ...
