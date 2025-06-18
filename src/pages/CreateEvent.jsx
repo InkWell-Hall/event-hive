@@ -1,6 +1,9 @@
 import Navbar from "../components/Navbar";
+import useSWR from "swr";
+import {apifetcher} from "../api/client";
 
 export default function CreateEvent() {
+    const {data} = useSWR('/colleges', apifetcher);
     return (
         <>
             <Navbar />
@@ -8,6 +11,15 @@ export default function CreateEvent() {
                 <h1 className=" flex text-3xl font-bold items-center justify-center py-4">Create Event</h1>
                 <form action="">
                     <div className="flex flex-col justify-around items-center">
+                        <div>
+                            <p className="text-xs font-bold mt-10">College</p>
+                            <select  className="h-10 w-165 bg-white text-xs rounded-md px-2" name="college" id="">
+                                <option value="">College OF Engineering</option>
+                               {data?.data.map((college) => (
+                                   <option key={college.id} value={college.id}>{college.name}</option>
+                               ))}
+                            </select>
+                        </div>
                         <div>
                             <p className="text-xs font-bold mt-10">Event Title</p>
                             <input type="text" className="h-10 w-165 bg-white text-xs rounded-md px-2"
