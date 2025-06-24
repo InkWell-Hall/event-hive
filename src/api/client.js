@@ -6,7 +6,11 @@ export const apiClient = axios.create({
 
 
 export const apifetcher = async (url) => {
-  const response = await apiClient.get(url);
+  const response = await apiClient.get(url, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("ACCESS_TOKEN")}`
+    }
+  });
   return response.data;
 };
 
